@@ -1,0 +1,1323 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background: #202443;
+}
+
+@font-face {
+    font-family: futura-md;
+    src: url(./fonts/futura-medium-bt.ttf);
+}
+
+@font-face {
+    font-family: objectivity;
+    src: url(./fonts/Objectivity-Medium.otf);
+}
+@font-face {
+    font-family: futura-bk-bt;
+    src: url(fonts/futura-light-bt.ttf);
+}
+font-face {
+    font-family: futura;
+    src: url(./fonts/Futura\ Book\ font.ttf);
+} 
+
+
+
+.home-nav-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/Magnificient-Home.jpg");
+    text-align: left;
+    background-size: cover;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    position: fixed;
+    z-index: 99999;
+    padding: 1rem;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-family: futura-md;
+}
+ul li a:hover {
+    color: #4F7DFD;
+}
+
+a {
+    text-decoration: none;
+    font-family: objectivity, 'san-serif';
+}
+
+.hamburger {
+    display: none;
+    margin: 1rem 2.5em 1rem 1rem;  
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 30px;
+    margin: 5px;
+    transition: .3s;
+    
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4F7DFD;
+    color: white;
+    height: 2.5rem;
+    width: 8rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    transition: 1s;
+    border: 2px solid  #4F7DFD;
+    font-family: futura-md;
+    margin-right: 4rem;
+}
+.contact-btn:hover {
+    background: transparent;
+}
+#contact {
+    display: none;
+    margin: 5rem 0rem 0rem 1rem;
+}
+.btns {
+    display: flex;
+}
+.name {
+    font-family: objectivity, 'san-serif';
+    font-size: 1.5rem;
+    margin: 1rem 0rem 0px 4rem;
+    cursor: pointer;
+}
+
+.back-to-top {
+    background: #0a0e3b;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    margin: 2rem;
+    right: -0%;
+    bottom: -100%;
+    transition: .7s;
+    z-index: 999;
+}
+
+.top {
+    transform: rotate(268deg) scale(0.6);
+    animation-name: btn;
+    animation-fill-mode: forwards;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+
+@keyframes btn {
+    10% {
+        margin-bottom: .5rem;
+    }
+   
+    70% {
+        margin-top: .5rem;   
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.collectible {
+    color: #4F7DFD;
+    font-size: 1.2rem;
+}
+
+.find {
+    font-family: objectivity;
+    font-size: 3rem;
+}
+
+.extralordinary {
+    font-family: futura-bk-bt;
+}
+
+.browse-nfts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #4F7DFD;
+    color: #4F7DFD;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 1rem;
+    font-family: futura-md;
+    margin-top: 5rem;
+    transition: 1s;
+}
+.browse-nfts:hover {
+    background: #4F7DFD;
+    color: white;
+}
+.sugar-coating {
+    margin: 1rem 0rem 3rem 5rem;
+}
+.crystal-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.crystal-background {
+    height: 35rem;
+    width: 25rem;
+    background: url(./images/Rectangle\ 7.png);
+    background-position: center;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 6rem 2rem 1rem;
+    border: 1px solid white;
+}
+
+.amount-container {
+    display: flex;
+}
+
+.height {
+    margin-right: 2rem;
+}
+
+.place-bid-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202443;
+    width: 9rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 1rem;
+    font-family: futura-md, 'san-serif';
+    transition: 1s;
+}
+.place-bid-btn:hover {
+    border: 1px solid #202443;
+    background: transparent;
+}
+span {
+    color: #202443;
+}
+
+.item {
+    font-family: objectivity, 'san-serif';
+}
+
+
+.trending-nfts {
+    text-align: left;
+}
+
+
+.popular-nft-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #4F7DFD;
+    color: #4F7DFD;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 1rem;
+    font-family: futura-md;
+    margin: 4rem 8rem 0rem 0rem;
+    transition: 1s;
+}
+.popular-nft-btn:hover {
+    background: #4F7DFD;
+    color: white;
+}
+
+.trending-nfts-and-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 4rem;
+}
+
+.nfts-of-the-season {
+    font-family: futura-bk-bt;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.access-card {
+    font-family: objectivity;
+    color: #fff;
+}
+
+#trending-img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+
+.montiya-1 {
+    width: 16rem;
+    height: 15rem;
+    background: #2E325C;
+    position: relative;
+    z-index: -1;
+    top: -1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.first-trending-img {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.inside-montiya-1 {
+    display: flex;
+    color: #4F7DFD;
+    justify-content: space-evenly;
+    height: 5rem;
+
+}
+
+.montiya-name-1 {   
+    align-self: flex-end;
+    margin: 2rem 0rem 0rem 1.7rem;
+}
+
+.montiya-name-1::before {
+    content: "";
+    display: block;
+    background: url("./images/cap.png");
+    height: 11rem;
+    width: 11rem;
+    transform: scale(0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -3rem;
+    top: -1.8rem;
+}
+
+.stock {
+    margin-top: 2rem;
+}
+
+
+.item2 {
+    margin-top: 3rem
+}
+
+.amount-container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-end;
+}
+
+.height2 {
+    font-size: 1rem;
+    /* color: #131838; */
+}
+
+.place-bid-btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4F7DFD;
+    margin-top: .3rem;
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    border-radius: 1rem;
+    font-family: futura-md, 'san-serif';
+    transition: 1s;
+}
+
+.item-name {
+    margin-left: 1.5rem;
+}
+
+.montiya-2 {
+    width: 16rem;
+    height: 15rem;
+    background: #2E325C;
+    position: relative;
+    z-index: -1;
+    top: -1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.second-trending-img {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.inside-montiya-2 {
+    display: flex;
+    color: #4F7DFD;
+    justify-content: space-evenly;
+    height: 5rem;
+
+}
+
+.montiya-name-2 {   
+    align-self: flex-end;
+    margin: 2rem 0rem 0rem 1.7rem;
+}
+
+.montiya-name-2::before {
+    content: "";
+    display: block;
+    background: url("./images/cubic.png");
+    height: 11rem;
+    width: 11rem;
+    transform: scale(0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -3rem;
+    top: -1.8rem;
+}
+
+.stock {
+    margin-top: 2rem;
+}
+
+.montiya-3 {
+    width: 16rem;
+    height: 15rem;
+    background: #2E325C;
+    position: relative;
+    z-index: -1;
+    top: -1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.third-trending-img {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.inside-montiya-3 {
+    display: flex;
+    color: #4F7DFD;
+    justify-content: space-evenly;
+    height: 5rem;
+
+}
+
+.montiya-name-3 {   
+    align-self: flex-end;
+    margin: 2rem 0rem 0rem 1.7rem;
+}
+
+.montiya-name-3::before {
+    content: "";
+    display: block;
+    background: url("./images/cool.png");
+    height: 11rem;
+    width: 11rem;
+    transform: scale(0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -3rem;
+    top: -1.8rem;
+}
+
+.stock {
+    margin-top: 2rem;
+}
+
+.montiya-4 {
+    width: 16rem;
+    height: 15rem;
+    background: #2E325C;
+    position: relative;
+    z-index: -1;
+    top: -1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.fourth-trending-img {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.inside-montiya-4 {
+    display: flex;
+    color: #4F7DFD;
+    justify-content: space-evenly;
+    height: 5rem;
+
+}
+
+.montiya-name-4 {   
+    align-self: flex-end;
+    margin: 2rem 0rem 0rem 1.7rem;
+}
+
+.montiya-name-4::before {
+    content: "";
+    display: block;
+    background: url("./images/black-girl.png");
+    height: 11rem;
+    width: 11rem;
+    transform: scale(0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -3rem;
+    top: -1.8rem;
+}
+
+.stock {
+    margin-top: 2rem;
+}
+
+
+.trending-nft-imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.con {
+    display: flex;
+    justify-content: center;
+}
+
+.trending-creators-background {
+    background: linear-gradient(rgba(32, 36, 67, 0.1), rgba(32, 36, 67, 0.1)), url("./images/mask.png");
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3rem;
+    margin: 5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trending-creators-head {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+    margin-left: 3rem;
+}
+
+.nft-card {
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: futura-md, 'san-serif';    
+}
+
+.creator-card {
+    background: #202443;
+    height: 6rem;
+    width: 13rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+.creator-card-name {
+    position: relative;
+    margin-left: 4rem;
+}
+
+.creator-card-name::before {
+    content: url("./images/cap.png");
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: -6rem;
+    top: -3rem;
+    transform: scale(0.3);
+}
+
+.creator-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#explore-nfts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.nfts-to-explore {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 90%; */
+}
+
+.explore-word {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 7rem;
+    font-family: objectivity, 'san-serif';
+}
+
+.explore {
+    margin-left: 3rem;
+}
+
+.exlpore-nft-img {
+    display: flex;
+    flex-direction: column;
+    margin: .8rem .5rem;
+}
+
+.explore-montiya {
+    width: 16rem;
+    height: 15rem;
+    background: #2E325C;
+    position: relative;
+    z-index: -1;
+    top: -1rem;
+    left: 3rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.explore-inside-montiya {
+    display: flex;
+    color: #4F7DFD;
+    justify-content: space-evenly;
+    height: 5rem;
+
+}
+.explore-item-name {
+    margin-left: 1rem;
+}
+
+.explore-montiya-name {   
+    align-self: flex-end;
+    margin: 2rem 0rem 0rem 1.7rem;
+}
+
+.explore-montiya-name::before {
+    content: "";
+    display: block;
+    background: url("./images/black-girl.png");
+    height: 11rem;
+    width: 11rem;
+    transform: scale(0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: -3rem;
+    top: -1.8rem;
+}
+
+.stock {
+    margin-top: 2rem;
+}
+
+#explore-img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+
+.explore-place-bid-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4F7DFD;
+    margin-top: .3rem;
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    border-radius: 1rem;
+    font-family: futura-md, 'san-serif';
+    transition: 1s;
+}
+
+.explore-amount-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-end;
+}
+
+.load-btn {
+    width: 10rem;
+    height: 3rem;
+    outline: none;
+    background: transparent;
+    border: 1px solid #4F7DFD;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.load-btn::after {
+    content: url('./images/load.png');
+    height: 0.2rem;
+    width: 0.2rem;
+    position: absolute;
+    transform: scale(0.3);
+    margin-left: .5rem;
+}
+
+.categories {
+    text-align: left;
+}
+
+.category-head {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+}
+.caterogory-head-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.see-more-categories {
+    color: #4F7DFD;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.categories-body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+#grid-image {
+    width: 25rem;
+}
+
+
+.resources-count {
+    color: #4F7DFD;
+}
+
+.explore-beauty {
+    font-family: futura-md;
+    /* align-self: flex-start; */
+} 
+
+#discoveries {
+    text-align: left;
+}
+
+.first-discovery {
+    width: 17rem;
+    height: 22rem;
+    background: linear-gradient(to top left, #0a0e3b, #2E325C);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+}
+
+.discover {
+    font-family: objectivity;
+    font-size: 1.7rem;
+}
+
+.second-discovery {
+    width: 17rem;
+    height: 22rem;
+    background: linear-gradient(to top left, #451302, #FF6D3D);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+}
+
+.third-discovery {
+    width: 17rem;
+    height: 22rem;
+    background: linear-gradient(to top left, #023228, #25CFAA);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+}
+.fourth-discovery {
+    width: 17rem;
+    height: 22rem;
+    background: linear-gradient(to top left, #261b01, #FFCA40);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+   
+}
+
+#discoveries {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+.first-discovery::before {
+    content: url('./images/user-icon.png');
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: relative;
+    bottom: 3rem;
+    transform: scale(.5);
+}
+.second-discovery::before {
+    content: url('./images/squares.png');
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: relative;
+    bottom: 3rem;
+    transform: scale(.5);
+}
+.third-discovery::before {
+    content: url('./images/drawing-board.png');
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: relative;
+    bottom: 3rem;
+    transform: scale(.5);
+}
+.fourth-discovery::before {
+    content: url('./images/purse.png');
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: relative;
+    bottom: 3rem;
+    transform: scale(.5);
+}
+
+.first-discovery::after {
+    content: url('');
+    position: absolute;
+    background:  #031a42;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    border-radius: 2rem;
+    transition: .5s;
+    z-index: -1;
+}
+
+.first-discovery:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.second-discovery::after {
+    content: url('');
+    position: absolute;
+    background:  #c57307;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    border-radius: 2rem;
+    transition: .5s;
+    z-index: -1;
+}
+
+.second-discovery:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.third-discovery::after {
+    content: url('');
+    position: absolute;
+    background:   #046774;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    border-radius: 2rem;
+    transition: .5s;
+    z-index: -1;
+}
+
+.third-discovery:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.fourth-discovery::after {
+    content: url('');
+    position: absolute;
+    background: #aaa70a;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    border-radius: 2rem;
+    transition: .5s;
+    z-index: -1;
+}
+
+.fourth-discovery:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+#second-nft-exploring {
+    text-align: left;
+    background: linear-gradient(to right, #622C9A, #332978);
+    width: 90%;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.explore-and-also-discover {
+    font-family: objectivity, 'san-serif';
+    font-size: 2rem;
+}
+
+.another-browse-nft-btn {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #4F7DFD;
+    background: #4F7DFD;
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+
+.another-browse-nft-btn:hover {
+    background: transparent;
+}
+
+.nft-token-img {
+    width: 35%;
+    height: 25rem;
+}
+
+#blogs {
+    text-align: left;
+    margin: 2rem;
+}
+
+#blog-img {
+    width: 25rem;
+    border-radius: 2rem;
+}
+
+.blog-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.first-blog-img {
+    height: 19rem;
+}
+
+
+#footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/Magnificient-Home.jpg');
+    text-align: left;
+    background-size: cover;
+    padding: 2rem;
+}
+.footer-services-links {
+    color: #fff;
+}
+.footer-communities-links {
+    color: #fff;
+}
+
+.magnificent {
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+}
+
+.sub-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-services-container {
+    margin: 0 1rem;
+} 
+.newsletter-container {
+    margin: 0 1rem;
+}
+.services-head {
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+}
+
+.community-head {
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+}
+
+.newsletter-head {
+    font-size: 2rem;
+    font-family: objectivity, 'san-serif';
+}
+#linkedin {
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 1rem 1rem 1rem;
+    transition: 1s;
+    
+}
+
+#twitter {
+    margin: 2rem 1rem 1rem 1rem;
+    transition: 1s;
+}
+#twitter:hover {
+    margin-top: 1rem;
+}
+
+#linkedin:hover {
+    margin-top: 1rem;
+}
+
+
+#socials {
+    display: flex;
+}
+
+.newsletter-input {
+    background: #fff;
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    border-radius: .7rem;
+    padding-left: 2rem;
+    color: grey;
+    font-family: objectivity;
+}
+
+.newsletter-btn {
+    width: 5rem;
+    height: 3rem;
+    background: #4F7DFD;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: -3.5rem;
+    left: 20rem;
+    color: white;
+}
+
+.copyright-container {
+    margin: 0 auto;
+    background: #2E325C;
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5)
+}
+         
+              /* Media Queries */
+@media screen and (max-width: 1055px) {
+    .trending-nft-imgs {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 5;
+    }
+    .hamburger.active {
+        margin-right: .7rem;
+        margin-top: .5rem;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(0.7rem);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-0.7rem);
+    }
+    .backdrop.active {
+        display: block;
+    }
+    .back-to-top {
+        margin-right: .5rem;
+    }
+
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        background: #0a0e3b;
+        position: absolute;
+        height: 100vh;
+        width: 50%;
+        right: -100%;
+        top: 0;
+        align-items: flex-end;
+        padding-right: 2rem;
+        transition: .3s;
+        margin-top: 0;
+        padding-top: 5rem;
+        z-index: 2;
+    }
+    .links.active {
+        right: 0%;
+    }
+
+    ul li {
+        margin: 2rem 0px;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+    #contact {
+        display: flex;
+    }
+    .crystal-background {
+        display: none;
+    }
+    .extralordinary {
+        margin-right: .5rem;
+    }
+
+    .categories-body-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #second-nft-exploring {
+        padding: 1rem;
+    }
+    .nft-token-img {
+        width: 15rem;
+        height: 10rem;
+    }
+    .trending-nft-imgs {
+        justify-content: center;
+    }
+    .nfts-to-explore {
+        justify-content: center;
+    }
+    .trending-nfts-and-btn {
+        flex-wrap: wrap;
+    }
+}
+
+           
+
+@media screen and (max-width: 669px) {
+    .sub-footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 497px) {
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-btn {
+      top: 0;
+      left: 0;
+      margin: 1rem;
+      margin-left: 0;
+      align-self: flex-end;
+    }
+
+    .newsletter-input {
+        width: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    .trending-nfts-and-btn {
+        flex-direction: column;
+    }
+    #grid-image {
+        width: 20rem;
+    }
+    .name {
+        margin-left: 0;
+    }
+    .caterogory-head-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .categories-body-container {
+        flex-direction: column;
+    }
+    #grid-image {
+        width: 17rem;
+    }
+    .blog-imgs {
+        flex-direction: column;
+    }
+    #blog-img {
+        width: 20rem;
+    }
+    .copyright-container {
+        font-size: .6rem;
+    }
+}
+
+    @media screen and (max-width: 358px) {
+        #grid-image {
+            width: 100%;
+        }
+    #blog-img {
+        width: 100%;
+    } 
+    #second-nft-exploring {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 1rem;
+        width: 80%;
+        height: 40rem;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact {
+        margin: 1rem 0 0 0;
+    }
+    .find {
+        font-size: 1.6rem;
+    }
+    .newsletter-input {
+        width: 100%;
+    }
+    .first-discovery, .second-discovery, .third-discovery, .fourth-discovery {
+        width: 15rem;
+        padding: .5rem;
+    }
+    .nfts-of-the-season {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 325px) {
+    .explore-word {
+        font-size: 1.4rem;
+        margin-left: 5rem;
+    }
+
+    .trending-creators-head {
+        font-size: 1.4rem;
+    }
+    .category-head {
+        font-size: 1.7rem;
+    }
+    .trending-nfts-and-btn {
+        margin-left: 1rem;
+    }
+    .trending-creators-background {
+        transform: scale(0.8);
+    }
+
+    #explore-nfts {
+        margin-right: 4rem;
+    }
+}
