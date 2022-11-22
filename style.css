@@ -1115,6 +1115,7 @@ span {
 @media screen and (max-width: 960px) {
     .explore-word {
         align-self: center;
+        margin-left: 4rem;
     }
 }
 
