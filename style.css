@@ -603,13 +603,13 @@ span {
 .nfts-to-explore {
     display: flex;
     flex-wrap: wrap;
-    /* width: 90%; */
+    justify-content: center;
 }
 
 .explore-word {
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 7rem;
+    margin-left: 8rem;
     font-family: objectivity, 'san-serif';
 }
 
@@ -1110,6 +1110,11 @@ span {
 @media screen and (max-width: 1055px) {
     .trending-nft-imgs {
         justify-content: center;
+    }
+}
+@media screen and (max-width: 960px) {
+    .explore-word {
+        align-self: center;
     }
 }
 
