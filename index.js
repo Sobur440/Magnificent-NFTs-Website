@@ -8,7 +8,6 @@ const creatorsNav = document.querySelector('#creators-navigator')
 const exploreNav = document.querySelector('#explore-navigator')
 const blogNav = document.querySelector('#blog-navigator')
 const backToTop = document.querySelector('.back-to-top')
-let screenWidth = screen.width
 
 
 window.addEventListener("scroll", () => {
