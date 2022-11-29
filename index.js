@@ -29,11 +29,6 @@ window.addEventListener("scroll", () => {
     }
 })
 
-if (screenWidth <= 800) {
-    
-}
-
-
 
 
 hamburger.addEventListener('click', () => {
